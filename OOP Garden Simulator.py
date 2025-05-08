@@ -38,7 +38,7 @@ class Tree(Plant):
         self.age += week
         print(f"{self.plant_name} grew {self.height} m and aged {self.age} week(s).")
 
-class Bamboo(Plant):
+class Grass(Plant):
     def __init__(self, plant_name, height, age):
         super().__init__(plant_name, height, age)
     
@@ -65,6 +65,6 @@ tree.grow()
 
 print(f"------------------------------------------")
 
-bamboo = Bamboo("Bamboo", 100, 40)
-bamboo.make_food()
-bamboo.grow()
+grass = Grass("Bamboo", 100, 40)
+grass.make_food()
+grass.grow()
